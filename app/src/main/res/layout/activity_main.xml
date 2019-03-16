@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="joscar.soft.lidomlive.MainActivity">
+
+    <TextView
+        android:id="@+id/LabelIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Esto dira al inicio" />
+
+    <WebView
+        android:id="@+id/Browser"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelIndicator" />
+
+</android.support.constraint.ConstraintLayout>
