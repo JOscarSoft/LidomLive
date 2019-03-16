@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     WebView Browser;
     Timer Temp;
-    int Counter = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
@@ -49,10 +48,7 @@ public class MainActivity extends AppCompatActivity {
     final Runnable seText = new Runnable() {
         @Override
         public void run() {
-            Counter++;
-            TextView Indicator = findViewById(R.id.LabelIndicator);
             Browser.loadUrl("https://www.licey.com/wp-content/plugins/licey-gameday/liceygameday_new.html");
-            Indicator.setText("Running task #" + Counter);
         }
     };
 }
