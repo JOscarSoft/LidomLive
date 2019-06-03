@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
